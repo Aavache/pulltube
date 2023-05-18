@@ -1,12 +1,11 @@
 from setuptools import setup, find_packages
 
+
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 # setting __version__
 __version__ = '0.0.0'
-with open('terminal/__init__.py') as f:
-    exec(f.readline().strip())
 
 # Parsing requirements
 with open('requirements.txt', 'r') as f:
@@ -19,12 +18,9 @@ setup(
     long_description=long_description,
     author='Aavache',
     author_email='aaron.valero@outlook.com',
-    packages=find_packages(include=['terminal', 'cli.*']) + ['incl'],
-    package_dir={'incl': 'sdk'},
-    include_package_data=True,
     entry_points={
         'console_scripts': [
-            'incl = cli.cli:cli',
+            'pulltube = cli:cli',
         ],
     },
     install_requires=requirements,
