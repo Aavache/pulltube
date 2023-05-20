@@ -1,7 +1,7 @@
 import sys
 import click
 from pytube import YouTube
-import exceptions
+from . import exceptions
 
 
 @click.command()
@@ -35,7 +35,7 @@ def cli(urls, save_path, only_audio, extension):
             steam = streams[0]
 
         click.echo(f"Downloading {url}...")
-        steam.download()
+        steam.download(save_path)
 
 
 if __name__ == '__main__':

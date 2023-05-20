@@ -1,10 +1,7 @@
 from setuptools import setup, find_packages
 
 
-with open('README.md', 'r', encoding='utf-8') as f:
-    long_description = f.read()
-
-# setting __version__
+# Setting __version__
 __version__ = '0.0.0'
 
 # Parsing requirements
@@ -15,14 +12,15 @@ setup(
     name='pulltube',
     version=__version__,
     description='Terminal based application to download YouTube videos',
-    long_description=long_description,
+    long_description=open('README.md').read(),
     author='Aavache',
     author_email='aaron.valero@outlook.com',
     entry_points={
         'console_scripts': [
-            'pulltube = cli:cli',
+            'pulltube = src.cli:cli',
         ],
     },
+    packages=find_packages(),
     install_requires=requirements,
     python_requires='>=3.5.0',
     setup_requires=['wheel']

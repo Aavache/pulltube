@@ -14,7 +14,7 @@ pip install .
 
 1. Get the video link!, in order to get the correct URL, click the button `share` below the video and copy the link.
 
-2. Go to your terminal and pull the video with the following command. Feel free to add multiple videos. Don't forget to wrap the URL with quotes, there could be special characters.
+2. Go to your terminal and pull the video with the following command. Feel free to add multiple videos. Don't forget to wrap the URL with quotes as there could be special characters.
 
 ```sh
 pulltube 'http://youtube.com/watch?v=9bZkp7q19f0'
