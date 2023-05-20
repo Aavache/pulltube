@@ -25,7 +25,7 @@ pulltube 'http://youtube.com/watch?v=9bZkp7q19f0'
 pulltube --only-audio 'http://youtube.com/watch?v=9bZkp7q19f0'
 ```
 
-# Checkout available option
+# Checkout available options
 
 ```sh
 $ pulltube --help
